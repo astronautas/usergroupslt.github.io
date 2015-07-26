@@ -11,10 +11,8 @@
 
     <title>Usergroups.lt - meetups in Lithuania for developers</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="./css/bootstrap.min.css" rel="stylesheet">
-    <link href="./css/bootstrap-theme.min.css" rel="stylesheet">
-    <link href="./css/style.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+    <link href="./css/style.min.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -24,61 +22,59 @@
   </head>
 
   <body>
+    <header class="header">
+      <div class="header__logo-area">Usergroups.lt</div>
 
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="index.html">Usergroups.lt</a>
+      <nav class="header__desktop-navigation">
+        <ul>
+          <li class="header__navigation-item"><a href="parama.html">Parama</a></li>
+          <li class="header__navigation-item"><a href="kontaktai.html">Kontaktai</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__mobile-navigation-launcher">
+        <div class="hamburger js-mobile-navigation-expander">
+          <div class="hamburger__top"></div>
+          <div class="hamburger__meat"></div>
+          <div class="hamburger__meat"></div>
+          <div class="hamburger__bottom"></div>
         </div>
-          <button type="button" class="navbar-toggle pull-right" data-toggle="collapse" data-target=".navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-          </button>
-          <div class="collapse navbar-collapse">
-              <ul class="nav navbar-nav pull-right">
-                <li><a href="parama.html">Parama</a></li>
-                <li><a href="kontaktai.html">Kontaktai</a></li>
-              </ul>
-          </div>
+      </div>
+
+    </header>
+    <nav class="mobile-navigation js-mobile-navigation">
+      <ul>
+        <li class="mobile-navigation__item"><a href="parama.html">Apie</a></li>
+        <li class="mobile-navigation__item"><a href="parama.html">Parama</a></li>
+        <li class="mobile-navigation__item"><a href="kontaktai.html">Kontaktai</a></li>
+      </ul>
+    </nav>
+    <div class="content">
+      <h1 class="page-title text-center">Meetups in Lithuania for developers</h1>
+
+      <div class="calendar-container">
+        <iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showCalendars=0&amp;height=600&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=lhcua5pqdrhkbh6je851c3mefg%40group.calendar.google.com&amp;color=%23711616&amp;ctz=Europe%2FVilnius" class="calendar-container__calendar" style=" border-width:0 " frameborder="0" scrolling="no"></iframe>
       </div>
     </div>
 
-    <div class="container">
-
-      <div class="starter-template">
-        <h1>Meetups in Lithuania for developers</h1>
-
-        <hr>
-        <div class="row responsive-iframe-container">
-          <iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showCalendars=0&amp;height=600&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=lhcua5pqdrhkbh6je851c3mefg%40group.calendar.google.com&amp;color=%23711616&amp;ctz=Europe%2FVilnius" style=" border-width:0 " width="800" height="600" frameborder="0" scrolling="no"></iframe>
-        </div>
-        <hr>
-
-        <div class="row">
-            <ol class="breadcrumb">
-              <li><a href="http://vilniusphp.lt">Vilnius PHP</a></li>
-              <li><a href="http://vilniusjs.lt">Vilnius JS</a></li>
-              <li><a href="http://vilnius-jug.lt">Vilnius JUG</a></li>
-              <li><a href="http://dotnetcrowd.lt">Vilnius .NET</a></li>
-              <li><a href="http://vilniusrb.lt">VilniusRB</a></li>
-              <li><a href="http://vilniuspy.lt">VilniusPy</a></li>
-              <li><a href="http://functionalvilnius.lt" title="Functional Vilnius">Vilnius FP</a></li>
-              <li><a href="http://kaunasphp.lt">Kaunas PHP</a></li>
-              <li><a href="http://kaunas-jug.lt">Kaunas JUG</a></li>
-            </ol>
-        </div>
+    <footer class="footer">
+      <div class="footer__navigation">
+        <ul>
+          <li class="footer__navigation-item"><img src="images/vilniusphp.jpg" height="18px"/><a href="http://vilniusphp.lt"> Vilnius PHP</a></li>
+          <li class="footer__navigation-item"><img src="images/vilniusjs.svg" height="18px"/><a href="http://vilniusjs.lt"> Vilnius JS</a></li>
+          <li class="footer__navigation-item"><img src="images/vilniusjug.jpg" height="18px"/><a href="http://vilnius-jug.lt"> Vilnius JUG</a></li>
+          <li class="footer__navigation-item"><img src="images/dotnet.png" height="18px"/><a href="http://dotnetcrowd.lt"> Vilnius .NET</a></li>
+          <li class="footer__navigation-item"><img src="images/vilniusrb.png" height="18px"/><a href="http://vilniusrb.lt"> VilniusRB</a></li>
+          <li class="footer__navigation-item"><img src="images/vilniuspy.jpeg" height="18px"/><a href="http://vilniuspy.lt"> VilniusPy</a></li>
+          <li class="footer__navigation-item"><img src="images/vilniusfunctional.png" height="18px"/><a href="http://functionalvilnius.lt" title="Functional Vilnius"> Vilnius FP</a></li>
+          <li class="footer__navigation-item"><img src="images/kaunasphp.png" height="18px"/><a href="http://kaunasphp.lt"> Kaunas PHP</a></li>
+        </ul>
       </div>
+    </footer>
 
-    </div><!-- /.container -->
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script src="js/script.js"></script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
