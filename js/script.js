@@ -3,7 +3,6 @@ $(document).ready(function() {
   var mobileNavigation = {
 
     init: function() {
-
       // Add selectors
       this.$navigation = $('.js-mobile-navigation');
       this.$expander   = $('.js-mobile-navigation-expander');
@@ -18,7 +17,6 @@ $(document).ready(function() {
     },
 
     expandNavigation: function(event) {
-
       if (this.$expander.hasClass('open')) {
         this.transformHamburger('close');
         this.$expander.removeClass('open');
