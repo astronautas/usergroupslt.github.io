@@ -91,12 +91,12 @@ a {
   height: 100%; }
 
 .footer {
-  margin-top: 50px; }
-
-.footer__navigation {
+  margin-top: 50px;
+  font-size: 14px;
   text-align: center; }
-  .footer__navigation ul {
-    padding: 0; }
+
+.footer__navigation ul {
+  padding: 0; }
 
 .footer__navigation-item {
   display: inline-block;

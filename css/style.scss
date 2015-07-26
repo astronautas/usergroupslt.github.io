@@ -113,11 +113,11 @@ a {
 
 .footer {
   margin-top: 50px;
+  font-size: $font-small;
+  text-align: center;
 }
 
 .footer__navigation {
-  text-align: center;
-
   ul {
     padding: 0;
   }
@@ -127,7 +127,7 @@ a {
   display: inline-block;
   margin-left: 10px;
   margin-right: 10px;
-  font-size: 20px;
+  font-size: $font-big;
 }
 
 // Media queries
