@@ -62,9 +62,10 @@ a {
 .mobile-navigation__item {
   width: 100%;
   height: 20px;
-  padding: 10px;
+  padding: 12px;
+  padding-left: 15px;
   list-style-type: none;
-  font-weight: 600; }
+  font-weight: 400; }
   .mobile-navigation__item:hover {
     background: #EE5348;
     color: white; }
@@ -98,14 +99,14 @@ a {
   font-size: 14px;
   text-align: center; }
 
-.footer__navigation ul {
+.organizers-list ul {
   padding: 0; }
 
-.footer__navigation-item {
+.organizers-list__item {
   display: inline-block;
   margin-left: 10px;
   margin-right: 10px;
-  font-size: 20px; }
+  font-size: 14px; }
 
 @media (max-width: 700px) {
   .logo-area {
